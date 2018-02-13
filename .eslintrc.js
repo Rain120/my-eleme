@@ -31,7 +31,8 @@ module.exports = {
         "no-tabs": "off",
         "indent": "off",
         "eol-last": "off",
-        // "no-trailing-spaces": "off",
-        "vue/no-side-effects-in-computed-properties": "off"
+        "no-trailing-spaces": "off",
+        "vue/no-side-effects-in-computed-properties": "off",
+        // "space-before-function-paren": ["error", "never"]
     }
 }

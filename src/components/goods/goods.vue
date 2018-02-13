@@ -72,7 +72,7 @@
         response = response.body
         if (response.errno === ERR_OK) {
           this.goods = response.data
-          console.log(this.goods)
+          // console.log(this.goods)
           this.$nextTick(() => {
             this._initScroll()
             this._calculateHeight()
@@ -150,7 +150,7 @@
           let item = foodList[i]
           height += item.clientHeight
           this.listHeight.push(height)
-          console.log(i, this.listHeight)
+          // console.log(i, this.listHeight)
         }
       }
     },
