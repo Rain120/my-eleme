@@ -19,33 +19,32 @@
 </template>
 
 <script>
-import VHeader from 'components/v-header/v-header'
-// import { ERR_OK } from './api/config'
-const ERR_OK = 0
+  import VHeader from 'components/v-header/v-header'
+  import { ERR_OK } from 'api/config'
 
-export default {
-  data () {
-    return {
-      seller: {}
-    }
-  },
-  created () {
-    this.$http.get('/api/seller').then((response) => {
-      response = response.body
-      if (response.errno === ERR_OK) {
-        this.seller = response.data
-        console.log(this.seller)
+  export default {
+    data () {
+      return {
+        seller: {}
       }
-    })
-  },
-  components: {
-    VHeader
+    },
+    created () {
+      this.$http.get('/api/seller').then((response) => {
+        response = response.body
+        if (response.errno === ERR_OK) {
+          this.seller = response.data
+          console.log(this.seller)
+        }
+      })
+    },
+    components: {
+      VHeader
+    }
   }
-}
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
- @import 'common/stylus/mixin.styl'
+  @import 'common/stylus/mixin.styl'
 
   #app
     .tab
