@@ -2,7 +2,7 @@
  * @Author: Rainy 
  * @Date: 2018-02-14 22:03:03 
  * @Last Modified by: Rainy
- * @Last Modified time: 2018-02-14 22:03:24
+ * @Last Modified time: 2018-02-14 22:58:27
  */
 /* eslint space-before-function-paren: ["error", "never"] */
 export function saveToLocal(id, key, value) {
