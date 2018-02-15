@@ -21,8 +21,8 @@
             <car-control @add="addFood" :food="food"></car-control>
           </div>
           <transition name="fade">
-              <div @click.stop.prevent="addFirst" class="buy" v-show="!food.count || food.count === 0">加入购物车</div>
-            </transition>
+            <div @click.stop.prevent="addFirst" class="buy" v-show="!food.count || food.count === 0">加入购物车</div>
+          </transition>
         </div>
         <split v-show="food.info"></split>
         <div class="info"  v-show="food.info">

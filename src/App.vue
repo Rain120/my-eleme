@@ -40,7 +40,7 @@
         if (response.errno === ERR_OK) {
           // this.seller = response.data
           this.seller = Object.assign({}, this.seller, response.data)
-          console.log(this.seller.id)
+          // console.log(this.seller.id)
         }
       })
     },
